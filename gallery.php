@@ -50,6 +50,7 @@
       // echo '</div>';
       // echo '</form>';
       $send = "";
+  //    add image
     echo '<nav class="navbar">';
     echo'<form class="form-inline" action="addimage.php">';
     echo'<div class="form-row align-items-center">';
@@ -70,9 +71,9 @@
     echo  '</div>';
     echo'</form>';
     echo '</nav>';
+// end
 
-
-
+// ค้นหา
     echo '<nav class="navbar">';
     echo '<a class="navbar-brand"></a>';
     echo '<form class="form-inline">';
@@ -80,12 +81,12 @@
     echo '<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>';
     echo '</form>';
     echo '</nav>';
+// จบ
 
-
-
+// connect php
       require('connect.php');
       echo '<div class="container" >';
-      echo'<h2> Photo Album</h2><br>';
+      echo'<h2> Photo</h2><br>';
       // try{
       if(isset($_REQUEST['send']))$send = $_REQUEST['send'];
       // }finally{
@@ -93,7 +94,7 @@
       // }
       $sql = "SELECT * FROM image ";
       // echo $sql;
-      
+ // end
 
       if($send == ""){
         $result = mysqli_query($conn,$sql);
@@ -115,7 +116,8 @@
               echo '</form>';
         }
         echo '</div>';
-      }else{
+      }
+      else{
         // echo $send;
         $sql .="WHERE IMAGENAME LIKE '%".$send."%'";
         $result = mysqli_query($conn,$sql);
@@ -141,31 +143,48 @@
   }else{
     // echo "User";
     require('connect.php');
-    echo '<div class="container" >';
-    echo'<h2> Photo Album</h2><br>';
+    $send ="";
+    echo '<nav class="navbar">';
+    echo '<a class="navbar-brand"></a>';
+    echo '<form class="form-inline">';
+    echo '<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="send" value="">';
+    echo '<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>';
+    echo '</form>';
+    echo '</nav>';
     $sql = "SELECT * FROM image ";
-    $result = mysqli_query($conn,$sql);
-    echo '<br>';
-    echo '<div class="row" style="float:left;" >';
-    while($row = mysqli_fetch_assoc($result)){
-          echo '<form action="Delete.php">';
-          echo '<div class="card" style="width: 20rem;float:left;">';
-          echo '<img class="card-img-top" src="'.$row['PATH'].'" alt="Card image cap">';
-          echo '<div class="card-body">';
-          echo '<h5 class="card-title" name="'.$row['IMAGENAME'].'">'.$row['IMAGENAME'].'</h5>';
-          echo '<p class="card-text"></p>';
-          // echo '<input type="submit" class="btn btn-primary" value="Delete">';
-          // echo '<input type="hidden" name="name" value="'.$row['IMAGENAME'].'">';
-          echo '</div>';
-          echo '</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;';
-          echo '<br>';
-          echo '</form>';
+    if(isset($_REQUEST['send']))$send = $_REQUEST['send'];
+
+    if($send != ""){
+      $sql .="WHERE IMAGENAME LIKE '%".$send."%'";
     }
-    echo '</div>';
-    }
+      echo '<div class="container" >';
+      echo'<h2> Photo Album</h2><br>';
+      $result = mysqli_query($conn,$sql);
+      echo '<br>';
+      echo '<div class="row" style="float:left;" >';
+      while($row = mysqli_fetch_assoc($result)){
+            echo '<form action="Delete.php">';
+            echo '<div class="card" style="width: 20rem;float:left;">';
+            echo '<img class="card-img-top" src="'.$row['PATH'].'" alt="Card image cap">';
+            echo '<div class="card-body">';
+            echo '<h5 class="card-title" name="'.$row['IMAGENAME'].'">'.$row['IMAGENAME'].'</h5>';
+            echo '<p class="card-text"></p>';
+            // echo '<input type="submit" class="btn btn-primary" value="Delete">';
+            // echo '<input type="hidden" name="name" value="'.$row['IMAGENAME'].'">';
+            echo '</div>';
+            echo '</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;';
+            echo '<br>';
+            echo '</form>';
+      }
+      echo '</div>';
+      }
+
   
 
+
 ?>
+
+ 
 </div>
 
 </body>

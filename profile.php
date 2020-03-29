@@ -40,7 +40,7 @@
   <!-- แถว1 -->
   <div class="row" style="justify-content: center;" >
   <div class="card" style="width:355px" >
-    <img class="card-img-top" src="image/love/1.jpg" alt="Card image" style="width:100%">
+    <img class="card-img-top" src="image/1.jpg" alt="Card image" style="width:100%">
     <div class="card-body">
       <h4 class="card-title">EXO</h4>
       <p class="card-text">เอ็กโซ วงดนตรีบอยแบนด์สัญชาติจีนและเกาหลีใต้ ก่อตั้งขึ้นที่โซล ภายใต้สังกัด SM เอนเตอร์เทนเมนต์</p>
@@ -49,19 +49,19 @@
   </div> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
   <div class="card" style="width:355px">
-    <img class="card-img-top" src="image/mons/10.jpg" alt="Card image" style="width:100%">
+    <img class="card-img-top" src="image/10.jpg" alt="Card image" style="width:100%">
     <div class="card-body">
       <h4 class="card-title">XIUMIN</h4>
-      <p class="card-text">คิม มิน-ซ็อก เกิดวันที่ 26 มีนาคม ค.ศ. 1990 (29 ปี) รู้จักกันในชื่อที่ใช้ในวงการคือ ซิ่วหมิน  </p><br>
+      <p class="card-text">คิม มิน-ซ็อก เกิดวันที่ 26 มีนาคม ค.ศ. 1990 รู้จักกันในชื่อที่ใช้ในวงการคือ ซิ่วหมิน  </p><br>
       <a href="xiumin.html" class="btn btn-primary">See Profile</a>
     </div>
   </div> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
   <div class="card" style="width:355px">
-    <img class="card-img-top" src="image/mons/15.jpg" alt="Card image" style="width:100%">
+    <img class="card-img-top" src="image/15.jpg" alt="Card image" style="width:100%">
     <div class="card-body">
       <h4 class="card-title">SUHO</h4>
-      <p class="card-text">คิม จุน-มยอน เกิดวันที่ 22 พฤษภาคม ค.ศ. 1991 (28 ปี)  หรือชื่อในวงการของเขาคือ ซูโฮ </p><br>
+      <p class="card-text">คิม จุน-มยอน เกิดวันที่ 22 พฤษภาคม ค.ศ. 1991 หรือชื่อในวงการของเขาคือ ซูโฮ </p><br>
       <a href="suho.html" class="btn btn-primary">See Profile</a>
     </div>
   </div> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -71,7 +71,7 @@
 <!-- แถว 2 -->
   <div class="row" style="justify-content: center;">
   <div class="card" style="width:355px" >
-    <img class="card-img-top" src="image/mons/11.jpg" alt="Card image" style="width:100%">
+    <img class="card-img-top" src="image/11.jpg" alt="Card image" style="width:100%">
     <div class="card-body">
       <h4 class="card-title">LAY</h4>
       <p class="card-text">จาง อี้ชิง เกิดเมื่อ 7 ตุลาคม ค.ศ.1991 ที่เมืองฉางชา, มณฑลหูหนาน, ประเทศจีน ชื่อในวงการคือ เลย์ (Lay)</p>
@@ -80,7 +80,7 @@
   </div> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
   <div class="card" style="width:355px">
-    <img class="card-img-top" src="image/mons/17.jpg" alt="Card image" style="width:100%">
+    <img class="card-img-top" src="image/17.jpg" alt="Card image" style="width:100%">
     <div class="card-body">
       <h4 class="card-title">BAEKHYUN</h4>
       <p class="card-text">พย็อน แบ็ก-ฮย็อน เกิดวันที่ 6 พฤษภาคม ค.ศ. 1992 หรือรู้จักกันในนาม แบ็กฮย็อน</p><br>
@@ -89,7 +89,7 @@
   </div> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
   <div class="card" style="width:355px">
-    <img class="card-img-top" src="image/mons/12.jpg" alt="Card image" style="width:100%">
+    <img class="card-img-top" src="image/19.jpg" alt="Card image" style="width:100%">
     <div class="card-body">
       <h4 class="card-title">CHEN</h4>
       <p class="card-text">คิม จง-แด เกิดวันที่ 21 กันยายน ค.ศ. 1992 รู้จักกันในชื่อที่ใช้ในวงการคือ เฉิน </p><br>
@@ -102,7 +102,7 @@
 <!-- แถว 3 -->
   <div class="row" style="justify-content: center;">
   <div class="card" style="width:355px" >
-    <img class="card-img-top" src="image/mons/16.jpg" alt="Card image" style="width:100%">
+    <img class="card-img-top" src="image/16.jpg" alt="Card image" style="width:100%">
     <div class="card-body">
       <h4 class="card-title">CHANYEOL</h4>
       <p class="card-text">พัก ชาน-ยอล  เกิดวันที่ 27 พฤศจิกายน พ.ศ. 2535 รู้จักกันดีในชื่อเดียวกันว่า ชานยอล</p><br>
@@ -111,7 +111,7 @@
   </div> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
   <div class="card" style="width:355px" >
-    <img class="card-img-top" src="image/mons/14.jpg" alt="Card image" style="width:100%">
+    <img class="card-img-top" src="image/14.jpg" alt="Card image" style="width:100%">
     <div class="card-body">
       <h4 class="card-title">D.O.</h4>
       <p class="card-text">โด คยอง-ซู  เกิดวันที่ 12 มกราคม ค.ศ. 1993 รู้จักกันในชื่อที่ใช้ในวงการคือ ดี.โอ. </p><br>
@@ -120,7 +120,7 @@
   </div> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
   <div class="card" style="width:355px" >
-    <img class="card-img-top" src="image/mons/18.jpg" alt="Card image" style="width:100%">
+    <img class="card-img-top" src="image/18.jpg" alt="Card image" style="width:100%">
     <div class="card-body">
       <h4 class="card-title">KAI</h4>
       <p class="card-text">คิม จง-อิน เกิดวันที่ 14 มกราคม ค.ศ. 1994 หรือชื่อในวงการคือ ไค </p><br>
@@ -132,7 +132,7 @@
 <!-- แถว 4 -->
   <div class="row">
   <div class="card" style="width:355px" >
-    <img class="card-img-top" src="image/mons/13.jpg" alt="Card image" style="width:100%">
+    <img class="card-img-top" src="image/20.jpg" alt="Card image" style="width:100%">
     <div class="card-body">
       <h4 class="card-title">SEHUN</h4>
       <p class="card-text">โอ เซ-ฮุน เกิดวันที่ 12 เมษายน ค.ศ. 1994 เป็นที่รู้จักในชื่อ เซฮุน</p>

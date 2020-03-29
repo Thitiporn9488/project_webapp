@@ -83,13 +83,11 @@
 
 
 
-
         echo '<nav class="navbar">';
         echo '</nav>';
 
-
-
         require('connect.php');
+        echo'<h2>Video</h2><br>';
 
         if(isset($_REQUEST['send']))$send = $_REQUEST['send'];
 
@@ -98,7 +96,7 @@
 
         if($send == ""){
             $result = mysqli_query($conn,$sql);
-            echo '<div class="row" style="float:left;" >';
+            echo '<div class="row" style="float:left;">';
             while($row = mysqli_fetch_assoc($result)){
                 echo '<form action="DeleteV.php">';
                 echo '<div class="card" style="width: 25rem;float:left;">';
@@ -135,8 +133,24 @@
             }
         }
     }else{
+        $send = "";
+        echo '<nav class="navbar">';
+        echo '<a class="navbar-brand"></a>';
+        echo '<form class="form-inline">';
+        echo '<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="send" value="">';
+        echo '<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>';
+        echo '</form>';
+        echo '</nav>';
+
         require('connect.php');
         $sql = "SELECT * FROM video ";
+
+        if(isset($_REQUEST['send']))$send = $_REQUEST['send'];
+
+        if($send != ""){
+            $sql .="WHERE VIDEO_NAME LIKE '%".$send."%'";
+        }
+
         $result = mysqli_query($conn,$sql);
         echo '<div class="row" style="float:left;" >';
         while($row = mysqli_fetch_assoc($result)){
