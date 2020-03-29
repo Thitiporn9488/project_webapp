@@ -42,6 +42,7 @@
   <h2> Photo Album</h2><br> -->
 <!-- row 1 -->
 <?php 
+//  หน้า แอดมิน
   if($_SESSION['name'] == "admin"){
       // echo '<form >';
       // echo '<div style="margin:auto;">';
@@ -141,6 +142,8 @@
         echo '</div>';
       }
   }else{
+    
+    // หน้า ผู้ใช้
     // echo "User";
     require('connect.php');
     $send ="";

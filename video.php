@@ -48,6 +48,7 @@
 </form>
 
 <?php
+// หน้า แอดมิน
     if($_SESSION['name'] == "admin"){
         $send ="";
         echo'<form class="form-inline" action="addvideo.php">';
@@ -72,7 +73,7 @@
         echo'</form>';
 
 
-
+// ค้นหา
         echo '<nav class="navbar">';
         echo '<a class="navbar-brand"></a>';
         echo '<form class="form-inline">';
@@ -133,6 +134,8 @@
             }
         }
     }else{
+
+        // หน้าผู้ใช้
         $send = "";
         echo '<nav class="navbar">';
         echo '<a class="navbar-brand"></a>';
